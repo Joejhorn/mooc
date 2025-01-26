@@ -14,6 +14,12 @@ class PhoneBook:
         if not name in self.__persons:
             return None
         return self.__persons[name]
+    
+    def get_name(self, number):
+        for person in self.__persons:
+            if number in self.__persons[person]:
+                return person
+        return None
 
 
     def all_entries(self):
@@ -47,12 +53,14 @@ class PhoneBookApplication:
         for name, numbers in self.__filehandler.load_file().items():
             for number in numbers:
                 self.__phonebook.add_number(name, number)
+    
 
     def help(self):
         print("commands: ")
         print("0 exit")
         print("1 add entry")
         print("2 search")
+        print("3 seach by number")
 
     def add_entry(self):
         name = input("name: ")
@@ -67,6 +75,16 @@ class PhoneBookApplication:
             return
         for number in numbers:
             print(number)
+
+    def search_number(self):
+        phone_num = input("number: ")
+        result = self.__phonebook.get_name(phone_num)
+        if result != None:
+            print(result)
+        else:
+            print('unknown number')
+
+      
 
     def exit(self):
         self.__filehandler.save_file(self.__phonebook.all_entries())
@@ -84,6 +102,8 @@ class PhoneBookApplication:
                 self.add_entry()
             elif command == "2":
                 self.search()
+            elif command == '3':
+                self.search_number()
             else:
                 self.help()
 
