@@ -36,3 +36,6 @@ if __name__ == '__main__':
 
     for product in shopping_list:
         print(f"{product[0]}: {product[1]} units")
+
+for i in range(len(shopping_list.products)):
+        print (f"{shopping_list.products[i][0]}: {shopping_list.products[i][1]} units")
