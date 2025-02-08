@@ -41,4 +41,5 @@ def find_words(term):
     return []  
 
 if __name__ == '__main__':
-    pass
+    print(find_words("car*"))
+    
