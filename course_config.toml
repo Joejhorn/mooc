@@ -130,7 +130,7 @@ checksum = "47317a44befc24d179d99ddcff471bce"
 
 [exercises.part02-02_number_of_characters]
 id = 272796
-checksum = "d6b24ad4868cfbc82f1437a72ff405be"
+checksum = "c5069055f62dc3888daf2a2fa75de450"
 
 [exercises.part02-03_typecasting]
 id = 272808
@@ -626,7 +626,7 @@ checksum = "f35fad9f23560cad46fa224a80b946bc"
 
 [exercises.part06-05_course_grading_part_2]
 id = 272992
-checksum = "9d66134f9f7115117d8efec795ea30f1"
+checksum = "fef60ecdc1aca0b6e24d7a4befd63664"
 
 [exercises.part06-06_course_grading_part_3]
 id = 272986
@@ -1062,4 +1062,4 @@ checksum = "45f5764fda4e31c2570e0d8295e26434"
 
 [exercises.part12-15_hockey_statistics]
 id = 272952
-checksum = "ff22c9f8b612be3ec9bd6f6527f24698"
+checksum = "3e680f7db93b93194fded3654947f8b2"
